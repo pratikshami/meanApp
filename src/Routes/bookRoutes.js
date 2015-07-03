@@ -1,8 +1,4 @@
 var express = require('express');
-var logger = require('bunyan'); //bunyan logger for streaming
-var bunyanMiddleware = require('bunyan-middleware'); //Request logger
-
-
 var routes = function(Books){
     
   var bookRouter = express.Router();

@@ -12,7 +12,6 @@ var db = mongoose.connect('mongodb://localhost:27017/bookAPI',function(err){
 //Include body parser for posting data
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-//app.use(express.static(__dirname + "/public"));
 
 
  //Object of the model
@@ -28,11 +27,8 @@ var bookRouter = require('./Routes/bookRoutes')(Books);
 //all requests for the Books are rediredtes to the bookRouter
 app.use('/api/Books',bookRouter);
 
-app.get('/',function(req,res){
-    res.render("index.html");
-});
 
 app.listen(port,function(){
-   console.log('Gulp is running on port: ' + port);
+   console.log('Grunt is running on port: ' + port);
 
 }); 
