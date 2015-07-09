@@ -21,6 +21,8 @@ module.exports = function(grunt) {
                 }
                                 } // nodemon
     });
+    
+    //added new line 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-nodemon');
 
